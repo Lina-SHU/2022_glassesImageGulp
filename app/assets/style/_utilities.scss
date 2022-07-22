@@ -4,6 +4,24 @@
   }
 }
 
+@for $i from 1 through 12{
+  .mt-#{$i}{
+    margin-bottom: $spacer * $i;
+  }
+}
+
+@for $i from 1 through 12{
+  .pb-#{$i}{
+    margin-bottom: $spacer * $i;
+  }
+}
+
+@for $i from 1 through 12{
+  .pt-#{$i}{
+    margin-bottom: $spacer * $i;
+  }
+}
+
 .mt-24{
   margin-top: $spacer*24; /* 96px */
 }
@@ -11,4 +29,48 @@
 .py-20{  /* 80px */
   padding-top: $spacer*20;
   padding-bottom: $spacer*20;
+}
+
+.fs-1{
+  font-size: $fs-1;
+}
+
+.fs-2{
+  font-size: $fs-2;
+}
+
+.fs-3{
+  font-size: $fs-3;
+}
+
+.fs-4{
+  font-size: $fs-4;
+}
+
+.fs-5{
+  font-size: $fs-5;
+}
+
+.fs-6{
+  font-size: $fs-6;
+}
+
+.fs-7{
+  font-size: $fs-7;
+}
+
+.fs-8{
+  font-size: $fs-8;
+}
+
+.fs-9{
+  font-size: $fs-9;;
+}
+
+.fz-10{
+  font-size: $fs-10;;
+}
+
+.fz-11{
+  font-size: $fs-11;;
 }

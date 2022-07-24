@@ -1,4 +1,268 @@
 .banner{
-  background-image: url('../../images/home-header.png');
+  background-image: url('../images/home-header.png');
+  background-size: cover;
   height: calc(100vh - 80px);
+  @media (max-width: 767px) {
+    background-image: url('../images/home-header-sm.png');
+    height: calc(100vh - 165px);
+  }
+  p{
+    font-size: $fs-8;
+    @media (max-width: 767px) {
+      font-size: $fs-2;
+    }
+  }
+  h2{
+    font-size: $fs-11;
+    margin-bottom: $spacer;
+    @media (max-width: 767px) {
+      font-size: $fs-6;
+      margin-bottom: $spacer*2;
+    }
+  }
+  &-body{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.banner-btn{
+  display: inline-block;
+  padding: 6px 12px;
+  border: none;
+  font-size: $fs-5;
+  &:hover{
+    background: $primary-dark;
+  }
+}
+
+/* 用專業的心，做專業的事 */
+.profession{
+  padding: $spacer*20 0;
+  .index-title{
+    margin-bottom: $spacer*6;
+  }
+  @media (max-width: 992px) {
+    padding-bottom: $spacer*16;
+  }
+  @media (max-width: 767px) {
+    padding-top: $spacer*10;
+    padding-bottom: $spacer*4;
+  }
+}
+.professionList{
+  &-item{
+    width: 23.6%;
+    @media (max-width: 992px) {
+      width: 48.3%;
+      margin-bottom: $spacer*6;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &-title{
+    font-size: $fs-6;
+    margin-bottom: $spacer*2;
+  }
+  &-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: $spacer*4;
+  }
+}
+
+/* 經典系列鏡框 */
+.classic{
+  padding: $spacer*20 0;
+  .index-title{
+    margin-bottom: $spacer*12;
+  }
+  @media (max-width: 992px) {
+    padding-bottom: $spacer*16;
+  }
+  @media (max-width: 767px) {
+    padding-top: $spacer*10;
+    padding-bottom: $spacer*4;
+  }
+}
+
+.classicList{
+  &-item{
+    width: 32%;
+    @media (max-width: 992px) {
+      width: 100%;
+      margin-bottom: $spacer*6;
+    }
+  }
+  &-img{
+    margin-bottom: $spacer*2;
+    @media (max-width: 992px) {
+      width: 48.3%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &-title{
+    font-size: $fs-10;
+    @media (max-width: 992px) {
+      width: 48.3%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+/* 聯名設計鏡框 */
+.design{
+  background-image: url('../images/index-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: $spacer*20 0;
+  &-title{
+    margin-bottom: $spacer*12;
+    @media (max-width: 767px) {
+      margin-bottom: $spacer*6;
+    }
+  }
+  @media (max-width: 992px) {
+    padding: $spacer*10 0;
+    background-image: url('../images/index-bg-sm.png');
+  }
+}
+
+.designList{
+  &-item{
+    width: 50%;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+    &:first-child{
+      @media (max-width: 992px) {
+        margin-bottom: $spacer*6;
+      }
+    }
+  }
+  &-img{
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-imgA{
+    background-image: url('../images/home-section4-1.png');
+    @media (max-width: 767px) {
+      background-image: url('../images/home-section4-1-sm.png');
+    }
+  }
+  &-imgB {
+    background-image: url('../images/home-section4-2.png');
+    @media (max-width: 767px) {
+      background-image: url('../images/home-section4-2-sm.png');
+    }
+  }
+  &-title{
+    font-size: $fs-10;
+    padding: $spacer*2 0;
+    border: 1px solid $border-color;
+  }
+}
+
+/* 顧客推薦 */
+.comment{
+  padding: $spacer*20 0;
+  &-title{
+    margin-bottom: $spacer*12;
+    @media (max-width: 767px) {
+      margin-bottom: $spacer*6;
+    }
+  }
+  @media (max-width: 992px) {
+    padding-bottom: $spacer*14;
+  }
+  @media (max-width: 767px) {
+    padding-top: $spacer*10;
+    padding-bottom: $spacer*6;
+  }
+}
+
+.commentList{
+  &-body{
+    padding: $spacer*4;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-title{
+    margin-bottom: $spacer*2;
+  }
+  &-img{
+    height: 306px;
+    background-size: cover;
+    background-position: center;
+  }
+  &-imgA{
+    background-image: url('../images/home-section5-1.png');
+  }
+  &-imgB {
+    background-image: url('../images/home-section5-2.png');
+  }
+  &-imgC {
+    background-image: url('../images/home-section5-3.png');
+  }
+  &-imgD {
+    background-image: url('../images/home-section5-4.png');
+  }
+  &-item{
+    width: 23.6%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px #00000029;
+    @media (max-width: 992px) {
+      width: 48.3%;
+      margin-bottom: $spacer*6;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-bottom: $spacer*4;
+    }
+  }
+}
+
+/* 聯絡我們 */
+.contactus-wrap{
+  width: 49%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: $spacer*20 0;
+  @media (max-width: 992px) {
+    width: 82.8%;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-top: $spacer*10;
+    padding-bottom: $spacer*14;
+  }
+}
+
+.contactus{
+  &-title{
+    margin-bottom: $spacer*12;
+    @media (max-width: 992px) {
+      margin-bottom: $spacer*6;
+    }
+  }
+  &-form{
+    margin-top: $spacer*6;
+  }
 }

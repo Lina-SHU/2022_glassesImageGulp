@@ -1,0 +1,46 @@
+.form {
+  &-group {
+    margin-bottom: $spacer*4;
+  }
+
+  &-label {
+    margin-bottom: $spacer*2;
+  }
+
+  &-input {
+    padding: 5px 12px;
+    border: 1px solid $black;
+    line-height: 1.5;
+    font-size: $fs-2;
+  }
+
+  &-check-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacer*12;
+
+    @media (max-width: 767px) {
+      align-items: flex-start;
+    }
+  }
+
+  &-check {
+    width: 20px;
+    height: 20px;
+    margin-right: $spacer*2;
+  }
+
+  &-submit {
+    width: 65.4%;
+    margin: 0 auto;
+    padding: $spacer*4 0;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}

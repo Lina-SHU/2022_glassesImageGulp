@@ -65,3 +65,11 @@
   }
 }
 
+.page-title{
+  font-size: $fs-10;
+  border-left: 8px solid $primary;
+  padding-left: $spacer*4;
+  @media (max-width: 767px) {
+    font-size: $fs-6;
+  }
+}

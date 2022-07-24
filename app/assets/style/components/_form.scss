@@ -43,4 +43,25 @@
       width: 100%;
     }
   }
+
+  &-select-label{
+    font-size: $fs-6;
+    margin-right: $spacer*4;
+    @media (max-width: 767px) {
+      font-size: $fs-2;
+      margin-right: $spacer*2;
+    }
+  }
+  &-select{
+    width: 23.5%;
+    color: #495057;
+    padding: 6px 11px;
+    font-size: $fs-3;
+    @media (max-width: 992px) {
+      width: 43.7%;
+    }
+    @media (max-width: 767px) {
+      width: 78%;
+    }
+  }
 }

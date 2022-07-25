@@ -1,0 +1,48 @@
+.cardList{
+  &-item{
+    width: 32.1%;
+    border: 1px solid #00000020;
+    margin-bottom: $spacer*12;
+    &:last-child{
+      margin-right: auto;
+      margin-left: $spacer*6;
+      @media (max-width: 992px) {
+        margin-left: 0;
+      }
+    }
+    @media (max-width: 992px) {
+      width: 48.3%;
+      margin-bottom: $spacer*6;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &-title{
+    font-size: $fs-6;
+    color: $gray;
+    padding: $spacer*2 $spacer*6;
+    border-bottom: 1px solid #00000020;
+  }
+  .contactList{
+    padding: $spacer*4 $spacer*6;
+    &-item{
+      margin-bottom: $spacer*2;
+      color: $gray;
+    }
+    span{
+      font-size: $fs-6;
+    }
+    p{
+      font-size: $fs-5;
+      margin-left: $spacer*2;
+    }
+  }
+  &-link{
+    background-color: $black;
+    padding: $spacer*4 0;
+    &:hover{
+      background-color: $secondary;
+    }
+  }
+}

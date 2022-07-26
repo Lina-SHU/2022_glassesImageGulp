@@ -2,6 +2,10 @@
   font-weight: bold;
 }
 
+.fw-medium{
+  font-weight: 500;
+}
+
 .text-italic{
   font-style: italic;
 }
@@ -16,6 +20,10 @@
 
 .text-white {
   color: $white;
+}
+
+.text-black {
+  color: $black;
 }
 
 .bg-primary{
@@ -71,5 +79,21 @@
   padding-left: $spacer*4;
   @media (max-width: 767px) {
     font-size: $fs-6;
+  }
+}
+
+.product-subTitle{
+  font-size: $fs-9;
+  @media (max-width: 767px) {
+    font-size: $fs-6;
+  }
+}
+
+.product-title{
+  font-size: $fs-7;
+  margin-bottom: $spacer*8;
+  @media (max-width: 767px) {
+    font-size: $fs-6;
+    margin-bottom: $spacer*6;
   }
 }

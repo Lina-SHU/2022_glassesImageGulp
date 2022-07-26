@@ -29,6 +29,9 @@
     &-item{
       margin-bottom: $spacer*2;
       color: $gray;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
     span{
       font-size: $fs-6;

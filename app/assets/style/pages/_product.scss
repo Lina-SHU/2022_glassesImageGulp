@@ -73,7 +73,8 @@
 }
 
 .product{
-  padding: $spacer*20 0;
+  padding-top: $spacer*20;
+  padding-bottom: $spacer*20;
   @media (max-width: 767px) {
     padding-top: $spacer*10;
     padding-bottom: $spacer*16;
@@ -88,6 +89,10 @@
     }
     @media (max-width: 767px) {
       margin-bottom: $spacer*6;
+    }
+    img {
+      margin: 0 auto;
+      display: block;
     }
   }
   &-item1{

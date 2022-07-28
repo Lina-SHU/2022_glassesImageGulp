@@ -1,0 +1,36 @@
+.navbar{
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  &-item{
+    &:first-child{
+      margin-left: -$spacer*6;
+      @media (max-width: 767px) {
+        margin-left: -13px;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 25%;
+      &:last-child{
+        margin-right: -13px;
+      }
+    }
+  }
+  &-link{
+    font-size: $fs-5;
+    padding: 13px $spacer*6; 
+    @media (max-width: 767px) {
+      font-size: $fs-2;
+      padding: $spacer*3 0;
+    }
+  }
+  &-search{
+    @media (max-width: 767px) {
+      display: none;
+    }
+    span{
+      font-size: 40px;
+      padding: $spacer*2 0;
+    }
+  }
+}

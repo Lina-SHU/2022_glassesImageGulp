@@ -1,0 +1,8 @@
+.breadcrumb{
+  &-item::after{
+    content: '/';
+  }
+  &-item:last-child::after{
+    content: '';
+  }
+}

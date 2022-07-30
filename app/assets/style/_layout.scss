@@ -67,6 +67,9 @@ nav{
       padding: 12px;
       font-size: $fs-2;
     }
+    &-last{
+      padding-right: 0;
+    }
   }
   &-item {
     @media (max-width: 767px) {

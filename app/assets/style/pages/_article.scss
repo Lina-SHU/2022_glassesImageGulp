@@ -1,0 +1,115 @@
+.article{
+  padding-top: $spacer*6;
+  padding-bottom: $spacer*20;
+  @media (max-width: 992px) {
+    padding-top: $spacer*2;
+  }
+  @media (max-width: 767px) {
+    padding-top: $spacer*2;
+    padding-bottom: $spacer*12;
+  }
+  &-content{
+    width: 66%;
+    @media (max-width: 992px) {
+      width: 74.14%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    &-paragraph{
+      margin-bottom: $spacer*10;
+      @media (max-width: 992px) {
+        margin-bottom: $spacer*6;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: $spacer*4;
+      }
+    }
+  }
+  &-aside{
+    width: 32.09%;
+    @media (max-width: 992px) {
+      width: 22.41%;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &-title{
+    font-size: $fs-10;
+    @media (max-width: 767px) {
+      font-size: $fs-6;
+    }
+  }
+  &-subTitle{
+    font-size: $fs-6;
+    margin-bottom: $spacer*4;
+    @media (max-width: 992px) {
+      margin-bottom: $spacer*6;
+    }
+    @media (max-width: 767px){
+      margin-bottom: $spacer*2;
+    }
+  }
+  &-aside-title{
+    font-size: $fs-7;
+    margin-bottom: $spacer;
+    @media (max-width: 992px) {
+      font-size: $fs-2;
+      margin-bottom: $spacer*2;
+    }
+  }
+  .label{
+    font-size: $fs-10;
+    margin-right: $spacer*2;
+    @media (max-width: 992px) {
+      font-size: $fs-6;
+      margin-right: 0;
+    }
+  }
+  &-img{
+    margin-bottom: $spacer*2;
+    @media (max-width: 992px) {
+      margin-bottom: $spacer*4;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: $spacer*2;
+    }
+  }
+  &-pagination{
+    a:hover{
+      text-decoration: underline;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.tagList{
+  &-item{
+    margin-right: $spacer*6;
+    @media (max-width: 992px) {
+      font-size: $fs-2;
+      margin-right: $spacer*4;
+    }
+  }
+}
+
+.article-social{
+  padding-bottom: $spacer*4;
+  margin-bottom: $spacer*6;
+  border-bottom: 1px solid #707070;
+  @media (max-width: 992px) {
+    padding-top: $spacer*4;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
+  &-list{
+    margin-left: $spacer*4;
+    &-item{
+      margin-right: $spacer*4;
+    }
+  }
+}

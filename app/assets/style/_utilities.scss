@@ -10,6 +10,18 @@
   }
 }
 
+@for $i from 1 through 12 {
+  .ml-#{$i} {
+    margin-left: $spacer * $i;
+  }
+}
+
+@for $i from 1 through 12 {
+  .mr-#{$i} {
+    margin-right: $spacer * $i;
+  }
+}
+
 @for $i from 1 through 12{
   .pb-#{$i}{
     margin-bottom: $spacer * $i;

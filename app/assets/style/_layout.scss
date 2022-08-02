@@ -126,6 +126,9 @@ nav{
     @media (max-width: 767px) {
       font-size: $fs-2;
     }
+    &:hover{
+      opacity: .8;
+    }
   
     span {
       font-size: $fs-10;
